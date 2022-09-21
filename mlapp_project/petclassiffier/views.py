@@ -12,7 +12,7 @@ from tensorflow import keras
 
 def home(request):
    
-   petClassifierFiles = mlModels.objects.filter(priority=1)[0]
+   petClassifierFiles = mlModels.objects.filter(priority=2)[0]
    path_arch = petClassifierFiles.architecture.path
    path_weights = petClassifierFiles.weights.path
    
